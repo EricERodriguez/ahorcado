@@ -1,0 +1,89 @@
+.alura{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    color: #0A3871;
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 22px;
+}
+/* Button */
+button{
+    cursor: pointer;
+}
+.container{
+    position: absolute;
+    left: 25%;
+    top: 45%;
+    align-items: center;
+}
+
+/* Auto layout */
+.btn-primary{
+    display: flex;
+    align-items: center;
+    padding: 15%;
+
+    width: 150%;
+    height: 100%;
+
+    background: #0A3871;
+    border-radius: 24px;
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100%;
+    line-height: 50%;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+
+    padding-left: 50%;
+}
+
+.btn-outline{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20%;
+    padding:15%;
+    width: 150%;
+    height: 100%;
+
+    background: #ffffff;
+    border-radius: 24px;
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100%;
+    line-height:50%;
+    align-items: center;
+    text-align: center;
+    
+    color: #0A3871;
+    padding-left: 25%;
+}
+
+.ingresar{
+    position: absolute;
+    top: 10%;
+    bottom: 0%;
+    left: 25%;
+    color: #0A3871;
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 140%;
+}
+input{
+    margin: 5%;
+    width: 130%;
+    height: 50px;
+}
+label{
+    margin: 5%;
+    width: 130%;
+    height: 50px;
+}
