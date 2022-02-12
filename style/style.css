@@ -1,3 +1,7 @@
+body{
+    align-items: center;
+    text-align: center;
+}
 .alura{
     position: absolute;
     top: 0%;
@@ -77,7 +81,7 @@ button{
     font-weight: normal;
     font-size: 140%;
 }
-input{
+.agregar{
     margin: 5%;
     width: 130%;
     height: 50px;
@@ -86,4 +90,155 @@ label{
     margin: 5%;
     width: 130%;
     height: 50px;
+}
+
+#myList{
+    /* display:inline */
+}
+
+#line{
+    /* text-decoration-line: underline; */
+    text-decoration-style: solid;
+    text-decoration-color: #0A3871;
+    font-size: 300%;
+    display:inline
+    /* inset-inline: initial; */
+}
+#domTextElement{
+    margin: 5%;
+    height: 50px;
+}
+
+.rectangle-1{
+    position: absolute;
+    width: 294px;
+    height: 5px;
+    left: 273px;
+    top: 503px;
+
+    /* Dark blue/dark-blue-300 */
+
+    background: #0A3871;
+    border-radius: 8px;
+}
+.rectangle-2{
+    position: absolute;
+    width: 4.5px;
+    height: 360px;
+    left: 353.67px;
+    top: 148px;
+
+    /* Dark blue/dark-blue-300 */
+
+    background: #0A3871;
+    border-radius: 8px;
+}
+.rectangle-3{
+    position: absolute;
+    width: 177.75px;
+    height: 4.5px;
+    left: 353.67px;
+    top: 148px;
+
+    /* Dark blue/dark-blue-300 */
+
+    background: #0A3871;
+    border-radius: 8px;
+}
+.rectangle-4{
+    position: absolute;
+    width: 4.5px;
+    height: 49.5px;
+    left: 526.92px;
+    top: 148px;
+
+    /* Dark blue/dark-blue-300 */
+
+    background: #0A3871;
+    border-radius: 8px;
+}
+.corps-1{
+    visibility: hidden;
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 494px;
+    top: 193px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 4px solid #0A3871;
+}
+.corps-2{
+    visibility: hidden;
+    position: absolute;
+    width: 4.5px;
+    height: 135px;
+    left: 526.92px;
+    top: 260px;
+
+    background: #0A3871;
+}
+.corps-3{
+    visibility: hidden;
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    left: 510px;
+    top: 270px;
+
+    /* Dark blue/dark-blue-300 */
+
+    background: #0A3871;
+    border-radius: 8px;
+    transform: rotate(30deg);
+}
+.corps-4{
+    visibility: hidden;
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    left: 543px;
+    top: 270px;
+
+    /* Dark blue/dark-blue-300 */
+
+    background: #0A3871;
+    border-radius: 8px;
+    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+}
+.corps-5{
+    visibility: hidden;
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    left: 510px;
+    top: 387.62px;
+
+    /* Dark blue/dark-blue-300 */
+
+    background: #0A3871;
+    border-radius: 8px;
+    transform: rotate(30deg);
+}
+.corps-6{
+    visibility: hidden;
+    /* display: none; */
+    position: absolute;
+    width: 4.5px;
+    height: 72px;
+    left: 543px;
+    top: 387.62px;
+
+    /* Dark blue/dark-blue-300 */
+
+    background: #0A3871;
+    border-radius: 8px;
+    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+}
+.containerGame{
+    position: absolute;
+    width: 200px;
+    height:  200px;
+    left: 300px;
+    top: 600px;
 }
