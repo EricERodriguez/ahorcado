@@ -1,10 +1,19 @@
-let palabra = "agua"
+let aleatorio = parseInt((Math.random() * 5001), 10)
+
+let palabra = ""
 
 
 
 function jugar() {
+    let palabra_aleatoria = palabras_comunes[aleatorio]
+    palabra = palabra_aleatoria
+
     let htmlJugar = document.getElementById('jugar')
     htmlJugar.setAttribute("disabled", true)
+
+    let htmlCoincidencia = document.getElementById('coincidencia')
+    htmlCoincidencia.removeAttribute('disabled')
+
     for (let index = 0; index < palabra.length; index++) {
         const element = palabra[index];
         console.log(element);
@@ -51,40 +60,9 @@ function coincidenciaEnpalabra() {
                 console.log("hay coincidencia");
                 const data = document.querySelector(`.${letra}-${index}`);
                 data.innerHTML = `${letra}`;
-                {conteosGanadas === palabra.length ? alert('ganaste'): ''}
+                {conteosGanadas === palabra.length ? alert('Ganaste, felicidades'): ''}
             }
         }
     }
     document.getElementById("domTextElement").value = ''
 }
-// var letra = ""
-// function coicidencia() {
-//     letraATomar();
-//     arrayLetras = document.getElementsByTagName('p')
-//     letra = document.getElementById("domTextElement").value
-//     // console.log(letra);
-//     let conteo = 0
-//     for (let index = 0; index < arrayLetras.length; index++) {
-//         // const element = array[index];
-//         console.log(arrayLetras[index].classList[0]);
-//         console.log(typeof(arrayLetras[index].classList[0]));
-//         console.log(arrayLetras[index].value);
-//         console.log(palabra.lastIndexOf('z'));
-//         if (arrayLetras[index].classList[0] == `${this.letra}-${index}`) {
-//             console.log("hay coincidencia");
-//             // arrayLetras[index].value = this.letra
-//             const data = document.querySelector(`.${this.letra}-${index}`);
-//             data.innerHTML = `<h1>${this.letra}</h1>`;
-//         }else if (arrayLetras[index].classList[0] != `${this.letra}-${index}`){
-//             conteo++
-//             console.log(conteo);
-//             const label = document.createElement(`label`);
-//             const textlabel = document.createTextNode(`${this.letra}`);
-//             // label.value=`${this.letra}`
-//             // Append the text label to the "li" label:
-//             label.appendChild(textlabel);
-//             // Append the "li" label to the list:
-//             document.getElementById("labelId").appendChild(label);
-//         }
-//     }
-// }

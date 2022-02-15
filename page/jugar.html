@@ -8,13 +8,8 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <!-- <a href="/"><h1 class="alura">a</h1></a> -->
+    <a href="/"><h1 class="alura">a</h1></a>
 
-
-    <!-- <div class="container">
-        <button class="btn-primary">Iniciar juego</button>
-        <button class="btn-outline">Agregar nueva palabra</button>
-    </div> -->
     <div>
         <div class="rectangle-1"></div>
         <div class="rectangle-2"></div>
@@ -35,9 +30,11 @@
             <div id="labelId">
             </div>
         <button onclick="jugar()" id="jugar" >Jugar</button>
-        <button onclick="coincidenciaEnpalabra()" class="">coincidencia</button>
+        <button onclick="coincidenciaEnpalabra()" class="coincidencia" disabled="true" id="coincidencia">coincidencia</button>
         </div>
     </div>
 </body>
 <script src="../js/ahorcado.js"></script>
+<script src="../js/arrayPalabras.js"></script>
+<script type="module"> import {palabras_comunes} from './arrayPalabras' </script>
 </html>
