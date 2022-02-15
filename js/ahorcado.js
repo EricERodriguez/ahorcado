@@ -16,7 +16,6 @@ function jugar() {
 
     for (let index = 0; index < palabra.length; index++) {
         const element = palabra[index];
-        console.log(element);
 
         const node = document.createElement(`p`);
         node.className=`${element}-${index}`
@@ -30,7 +29,6 @@ function jugar() {
 function letraATomar() {
     var letra = ""
     letra = document.getElementById("domTextElement").value
-    console.log(letra);
     return letra
 }
 let conteosPerdidos = 0
@@ -38,13 +36,11 @@ let conteosGanadas = 0
 
 function coincidenciaEnpalabra() {
     letra = document.getElementById("domTextElement").value
-    console.log(palabra.lastIndexOf(letra));
     if (palabra.lastIndexOf(letra)=== -1) {
         conteosPerdidos++
         {conteosPerdidos === 6 ? alert('Perdiste'): ''}
 
         intro = document.querySelector(`div.corps-${conteosPerdidos}`);
-        console.log(intro);
         intro.style.visibility = "visible"
 
         const label = document.createElement(`label`);
@@ -56,8 +52,6 @@ function coincidenciaEnpalabra() {
         for (let index = 0; index < arrayLetras.length; index++) {
             if (arrayLetras[index].classList[0] == `${this.letra}-${index}`) {
                 conteosGanadas++
-                console.log(conteosGanadas);
-                console.log("hay coincidencia");
                 const data = document.querySelector(`.${letra}-${index}`);
                 data.innerHTML = `${letra}`;
                 {conteosGanadas === palabra.length ? alert('Ganaste, felicidades'): ''}
